@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Projects — Stravous Construction</title>
+  <meta name="description"
+    content="Explore Stravous Construction's portfolio of premium residential, commercial, and land development projects across Nigeria.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Stravous <span>Construction</span></a>
+      <nav>
+        <ul class="nav-links" id="mainNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <button class="mobile-toggle"
+          onclick="document.getElementById('mainNav').classList.toggle('open');document.getElementById('navOverlay').classList.toggle('show')"><span
+            class="iconify" data-icon="mdi:menu" data-width="24"></span></button>
+        <a href="contact.html" class="btn-outline-h">Get a Quote</a>
+        <a href="contact.html" class="btn-solid-h">Start a Project</a>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav-overlay" id="navOverlay"
+    onclick="document.getElementById('mainNav').classList.remove('open');this.classList.remove('show')"></div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="gold-label" style="position:relative">Our Portfolio</div>
+    <h1>Our <span style="color:var(--gold)">Projects</span></h1>
+    <p>Explore the breadth and quality of our construction work — from residential estates to commercial developments.
+    </p>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="section section-light">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="gold-label">Project Gallery</div>
+        <h2>Construction Portfolio</h2>
+        <p>Every image tells the story of precision, teamwork, and dedication to building excellence.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall reveal stagger-1" onclick="openLightbox(this)"><img
+            src="assets/images/IMG_0790.JPG" alt="Estate Development" loading="lazy">
+          <div class="gallery-item-overlay"><span>Estate Development</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-2" onclick="openLightbox(this)"><img src="assets/images/IMG_0667.JPG"
+            alt="Site Preparation" loading="lazy">
+          <div class="gallery-item-overlay"><span>Site Preparation</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-3" onclick="openLightbox(this)"><img src="assets/images/IMG_0670.JPG"
+            alt="Team Coordination" loading="lazy">
+          <div class="gallery-item-overlay"><span>Team Coordination</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-4" onclick="openLightbox(this)"><img src="assets/images/IMG_0672.JPG"
+            alt="Site Analysis" loading="lazy">
+          <div class="gallery-item-overlay"><span>Site Analysis</span></div>
+        </div>
+        <div class="gallery-item wide reveal stagger-1" onclick="openLightbox(this)"><img
+            src="assets/images/IMG_0676.JPG" alt="Project Overview" loading="lazy">
+          <div class="gallery-item-overlay"><span>Project Overview</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-2" onclick="openLightbox(this)"><img src="assets/images/IMG_0679.JPG"
+            alt="Foundation Phase" loading="lazy">
+          <div class="gallery-item-overlay"><span>Foundation Phase</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-3" onclick="openLightbox(this)"><img src="assets/images/IMG_0689.JPG"
+            alt="Land Survey" loading="lazy">
+          <div class="gallery-item-overlay"><span>Land Survey</span></div>
+        </div>
+        <div class="gallery-item tall reveal stagger-4" onclick="openLightbox(this)"><img
+            src="assets/images/IMG_0700.JPG" alt="Active Build" loading="lazy">
+          <div class="gallery-item-overlay"><span>Active Build</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-1" onclick="openLightbox(this)"><img src="assets/images/IMG_0704.JPG"
+            alt="Team Briefing" loading="lazy">
+          <div class="gallery-item-overlay"><span>Team Briefing</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-2" onclick="openLightbox(this)"><img src="assets/images/IMG_0710.JPG"
+            alt="Structural Work" loading="lazy">
+          <div class="gallery-item-overlay"><span>Structural Work</span></div>
+        </div>
+        <div class="gallery-item wide reveal stagger-3" onclick="openLightbox(this)"><img
+            src="assets/images/IMG_0715.JPG" alt="Development Site" loading="lazy">
+          <div class="gallery-item-overlay"><span>Development Site</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-4" onclick="openLightbox(this)"><img src="assets/images/IMG_0720.JPG"
+            alt="Quality Check" loading="lazy">
+          <div class="gallery-item-overlay"><span>Quality Check</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-1" onclick="openLightbox(this)"><img src="assets/images/IMG_0725.JPG"
+            alt="Measurement" loading="lazy">
+          <div class="gallery-item-overlay"><span>Measurement</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-2" onclick="openLightbox(this)"><img src="assets/images/IMG_0733.JPG"
+            alt="Progress Shot" loading="lazy">
+          <div class="gallery-item-overlay"><span>Progress Shot</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-3" onclick="openLightbox(this)"><img src="assets/images/IMG_0750.JPG"
+            alt="Finishing Phase" loading="lazy">
+          <div class="gallery-item-overlay"><span>Finishing Phase</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-4" onclick="openLightbox(this)"><img src="assets/images/IMG_0759.JPG"
+            alt="Aerial View" loading="lazy">
+          <div class="gallery-item-overlay"><span>Aerial View</span></div>
+        </div>
+        <div class="gallery-item wide reveal stagger-1" onclick="openLightbox(this)"><img
+            src="assets/images/IMG_0763.JPG" alt="Community Project" loading="lazy">
+          <div class="gallery-item-overlay"><span>Community Project</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-2" onclick="openLightbox(this)"><img src="assets/images/IMG_0769.JPG"
+            alt="Site Management" loading="lazy">
+          <div class="gallery-item-overlay"><span>Site Management</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-3" onclick="openLightbox(this)"><img src="assets/images/IMG_0784.JPG"
+            alt="Construction Zone" loading="lazy">
+          <div class="gallery-item-overlay"><span>Construction Zone</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-4" onclick="openLightbox(this)"><img src="assets/images/IMG_0795.JPG"
+            alt="Completed Section" loading="lazy">
+          <div class="gallery-item-overlay"><span>Completed Section</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section class="section section-dark">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="gold-label">Drone Footage</div>
+        <h2 style="color:#fff">Aerial Project Views</h2>
+        <p>Experience the scale of our developments through stunning aerial footage.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1000px;margin:0 auto">
+        <div class="video-showcase reveal stagger-1" style="max-width:100%">
+          <video controls preload="metadata">
+            <source src="assets/videos/DJI_0401.MP4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-showcase reveal stagger-2" style="max-width:100%">
+          <video controls preload="metadata">
+            <source src="assets/videos/DJI_0421.MP4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE GALLERY -->
+  <section class="section section-soft">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="gold-label">More From Our Sites</div>
+        <h2>On-Site Documentation</h2>
+        <p>A closer look at our teams, equipment, and construction progress.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal stagger-1" onclick="openLightbox(this)"><img src="assets/images/IMG_0688.JPG"
+            alt="Team" loading="lazy">
+          <div class="gallery-item-overlay"><span>Team Coordination</span></div>
+        </div>
+        <div class="gallery-item tall reveal stagger-2" onclick="openLightbox(this)"><img
+            src="assets/images/IMG_0692.JPG" alt="Survey" loading="lazy">
+          <div class="gallery-item-overlay"><span>Survey Work</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-3" onclick="openLightbox(this)"><img src="assets/images/IMG_0695.JPG"
+            alt="Inspection" loading="lazy">
+          <div class="gallery-item-overlay"><span>Inspection</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-4" onclick="openLightbox(this)"><img src="assets/images/IMG_0698.JPG"
+            alt="Planning" loading="lazy">
+          <div class="gallery-item-overlay"><span>On-Site Planning</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-1" onclick="openLightbox(this)"><img src="assets/images/IMG_0701.JPG"
+            alt="Build" loading="lazy">
+          <div class="gallery-item-overlay"><span>Build Phase</span></div>
+        </div>
+        <div class="gallery-item wide reveal stagger-2" onclick="openLightbox(this)"><img
+            src="assets/images/IMG_0706.JPG" alt="Overview" loading="lazy">
+          <div class="gallery-item-overlay"><span>Project Overview</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-3" onclick="openLightbox(this)"><img src="assets/images/IMG_0711.JPG"
+            alt="Progress" loading="lazy">
+          <div class="gallery-item-overlay"><span>Progress Update</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-4" onclick="openLightbox(this)"><img src="assets/images/IMG_0730.JPG"
+            alt="Materials" loading="lazy">
+          <div class="gallery-item-overlay"><span>Material Check</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-1" onclick="openLightbox(this)"><img src="assets/images/IMG_0735.JPG"
+            alt="Phase 2" loading="lazy">
+          <div class="gallery-item-overlay"><span>Phase 2 Progress</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-2" onclick="openLightbox(this)"><img src="assets/images/IMG_0771.JPG"
+            alt="Completion" loading="lazy">
+          <div class="gallery-item-overlay"><span>Near Completion</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-3" onclick="openLightbox(this)"><img src="assets/images/IMG_0780.JPG"
+            alt="Final" loading="lazy">
+          <div class="gallery-item-overlay"><span>Final Stages</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-4" onclick="openLightbox(this)"><img src="assets/images/IMG_0793.JPG"
+            alt="Done" loading="lazy">
+          <div class="gallery-item-overlay"><span>Handover Ready</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE VIDEOS -->
+  <section class="section section-light">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="gold-label">Additional Footage</div>
+        <h2>More Aerial Views</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1000px;margin:0 auto">
+        <div class="video-showcase reveal stagger-1" style="max-width:100%">
+          <video controls preload="metadata">
+            <source src="assets/videos/DJI_0430.MP4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-showcase reveal stagger-2" style="max-width:100%">
+          <video controls preload="metadata">
+            <source src="assets/videos/DJI_0399.MP4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="reveal">Have a Project in Mind?</h2>
+    <p class="reveal stagger-1">Let us bring your construction vision to life. Contact us today for a free consultation
+      and project estimate.</p>
+    <div class="cta-btns reveal stagger-2">
+      <a href="contact.html" class="btn-solid-h" style="padding:16px 36px;font-size:16px;border-radius:14px">Start Your
+        Project</a>
+      <a href="about.html" class="btn-outline-h"
+        style="padding:16px 36px;font-size:16px;border-radius:14px;color:rgba(255,255,255,.8)">About Our Team</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Stravous <span>Construction</span></a>
+          <p>Nigeria's trusted construction partner. Building premium residential and commercial projects with quality,
+            integrity, and professional excellence since 2013.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5><a href="projects.html">Residential</a><a href="projects.html">Commercial</a><a
+            href="projects.html">Land Development</a><a href="projects.html">Renovations</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5><a href="about.html">About Us</a><a href="projects.html">Projects</a><a
+            href="contact.html">Contact</a><a href="#">Careers</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5><a href="mailto:info@stravousconstruction.com">info@stravousconstruction.com</a><a
+            href="tel:+2348000000000">+234 800 000 0000</a><a href="#">Abuja, Nigeria</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Stravous Construction. All rights reserved.</p>
+        <p>Built with Excellence in Nigeria</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <img id="lightboxImg" src="" alt="Project Image">
+  </div>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 60) }, { passive: true });
+    header.classList.toggle('scrolled', window.scrollY > 60);
+
+    const revealEls = document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    function openLightbox(el) {
+      const img = el.querySelector('img');
+      document.getElementById('lightboxImg').src = img.src;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('lightbox').addEventListener('click', function (e) { if (e.target === this) closeLightbox() });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox() });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => { document.getElementById('mainNav').classList.remove('open'); document.getElementById('navOverlay').classList.remove('show') });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Stravous Construction</title>
+  <meta name="description"
+    content="Learn about Stravous Construction's mission, team, and commitment to building excellence across Nigeria.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Stravous <span>Construction</span></a>
+      <nav>
+        <ul class="nav-links" id="mainNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <button class="mobile-toggle"
+          onclick="document.getElementById('mainNav').classList.toggle('open');document.getElementById('navOverlay').classList.toggle('show')"><span
+            class="iconify" data-icon="mdi:menu" data-width="24"></span></button>
+        <a href="contact.html" class="btn-outline-h">Get a Quote</a>
+        <a href="projects.html" class="btn-solid-h">Our Projects</a>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav-overlay" id="navOverlay"
+    onclick="document.getElementById('mainNav').classList.remove('open');this.classList.remove('show')"></div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="gold-label" style="position:relative">Our Story</div>
+    <h1>About <span style="color:var(--gold)">Stravous Construction</span></h1>
+    <p>Over a decade of building excellence, transforming landscapes, and creating lasting structures across Nigeria.
+    </p>
+  </section>
+
+  <!-- ABOUT CONTENT -->
+  <section class="section section-light">
+    <div class="section-inner">
+      <div class="about-split">
+        <div class="about-images reveal-left">
+          <div class="about-img-main"><img src="assets/images/IMG_0670.JPG" alt="Stravous Team On Site" loading="lazy">
+          </div>
+          <div class="about-img-float"><img src="assets/images/IMG_0677.JPG" alt="Team Discussion" loading="lazy"></div>
+        </div>
+        <div class="about-text reveal-right">
+          <div class="gold-label">Who We Are</div>
+          <h2>Building Nigeria's Future, One Project at a Time</h2>
+          <p>Founded with a passion for construction excellence, Stravous Construction has grown from a small team of
+            dedicated engineers to one of Nigeria's most respected construction firms. Our commitment to quality
+            craftsmanship, transparent processes, and client satisfaction has earned us a reputation that speaks
+            volumes.</p>
+          <p>We believe every structure tells a story — and we ensure that story is one of strength, beauty, and
+            enduring value. From luxury residential estates to large-scale commercial developments, our portfolio
+            reflects our unwavering dedication to excellence.</p>
+          <div class="about-features">
+            <div class="about-feat">
+              <div class="about-feat-icon"><span class="iconify" data-icon="mdi:certificate" data-width="20"></span>
+              </div>
+              <div>
+                <h5>Licensed & Certified</h5>
+                <p>Fully accredited professionals</p>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="about-feat-icon"><span class="iconify" data-icon="mdi:clock-check-outline"
+                  data-width="20"></span></div>
+              <div>
+                <h5>On-Time Delivery</h5>
+                <p>Consistent project timelines</p>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="about-feat-icon"><span class="iconify" data-icon="mdi:shield-check" data-width="20"></span>
+              </div>
+              <div>
+                <h5>Safety Standards</h5>
+                <p>Zero-compromise safety</p>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="about-feat-icon"><span class="iconify" data-icon="mdi:diamond-stone" data-width="20"></span>
+              </div>
+              <div>
+                <h5>Premium Materials</h5>
+                <p>Best-in-class sourcing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="section section-soft">
+    <div class="section-inner">
+      <div class="services-grid" style="grid-template-columns:1fr 1fr">
+        <div class="service-card reveal stagger-1" style="border-top:3px solid var(--gold)">
+          <div class="service-card-body">
+            <div class="service-icon"><span class="iconify" data-icon="mdi:bullseye-arrow" data-width="24"></span></div>
+            <h4>Our Mission</h4>
+            <p>To deliver world-class construction services that transform visions into reality, while maintaining the
+              highest standards of quality, safety, and environmental responsibility. We are committed to building
+              structures that stand the test of time and contribute positively to Nigerian communities.</p>
+          </div>
+        </div>
+        <div class="service-card reveal stagger-2" style="border-top:3px solid var(--gold)">
+          <div class="service-card-body">
+            <div class="service-icon"><span class="iconify" data-icon="mdi:telescope" data-width="24"></span></div>
+            <h4>Our Vision</h4>
+            <p>To be recognized as Nigeria's most trusted construction partner — setting industry benchmarks for
+              innovation, sustainability, and client satisfaction. We envision a Nigeria where every community has
+              access to quality-built infrastructure that enhances lives and drives progress.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE STRIP -->
+  <div class="image-strip reveal">
+    <img src="assets/images/IMG_0687.JPG" alt="Team" loading="lazy">
+    <img src="assets/images/IMG_0691.JPG" alt="Survey" loading="lazy">
+    <img src="assets/images/IMG_0697.JPG" alt="Planning" loading="lazy">
+    <img src="assets/images/IMG_0706.JPG" alt="Build" loading="lazy">
+    <img src="assets/images/IMG_0714.JPG" alt="Structure" loading="lazy">
+  </div>
+
+  <!-- TEAM SECTION -->
+  <section class="section section-light" id="team">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="gold-label">Our People</div>
+        <h2>Meet the Team</h2>
+        <p>Skilled professionals driving every project to success with expertise, dedication, and passion.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal stagger-1">
+          <div class="team-card-img"><img src="assets/images/IMG_0770.JPG" alt="Project Lead" loading="lazy"></div>
+          <div class="team-card-body">
+            <h4>Project Leads</h4>
+            <p>Senior Engineers & Managers</p>
+          </div>
+        </div>
+        <div class="team-card reveal stagger-2">
+          <div class="team-card-img"><img src="assets/images/IMG_0740.JPG" alt="Site Supervisor" loading="lazy"></div>
+          <div class="team-card-body">
+            <h4>Site Supervisors</h4>
+            <p>Quality & Safety Oversight</p>
+          </div>
+        </div>
+        <div class="team-card reveal stagger-3">
+          <div class="team-card-img"><img src="assets/images/IMG_0704.JPG" alt="Technical Team" loading="lazy"></div>
+          <div class="team-card-body">
+            <h4>Technical Team</h4>
+            <p>Architects & Structural Engineers</p>
+          </div>
+        </div>
+        <div class="team-card reveal stagger-4">
+          <div class="team-card-img"><img src="assets/images/IMG_0717.JPG" alt="Field Crew" loading="lazy"></div>
+          <div class="team-card-body">
+            <h4>Field Crew</h4>
+            <p>Skilled Craftsmen & Workers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="section section-dark">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="gold-label">Behind the Scenes</div>
+        <h2 style="color:#fff">Our Team in Action</h2>
+        <p>Watch our professionals at work — precision, teamwork, and dedication on every site.</p>
+      </div>
+      <div class="video-showcase reveal-scale">
+        <video controls preload="metadata">
+          <source src="assets/videos/DJI_0400.MP4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VALUES -->
+  <section class="section section-soft">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="gold-label">What Drives Us</div>
+        <h2>Our Core Values</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal stagger-1">
+          <div class="service-card-body">
+            <div class="service-icon"><span class="iconify" data-icon="mdi:hammer-wrench" data-width="24"></span></div>
+            <h4>Quality Craftsmanship</h4>
+            <p>Every detail matters. We use premium materials and proven construction techniques to ensure lasting
+              quality in every structure we build.</p>
+          </div>
+        </div>
+        <div class="service-card reveal stagger-2">
+          <div class="service-card-body">
+            <div class="service-icon"><span class="iconify" data-icon="mdi:handshake-outline" data-width="24"></span>
+            </div>
+            <h4>Client Partnership</h4>
+            <p>We treat every client as a partner. Transparent communication, regular updates, and collaborative
+              decision-making define our approach.</p>
+          </div>
+        </div>
+        <div class="service-card reveal stagger-3">
+          <div class="service-card-body">
+            <div class="service-icon"><span class="iconify" data-icon="mdi:leaf" data-width="24"></span></div>
+            <h4>Sustainable Building</h4>
+            <p>We integrate environmentally responsible practices into our construction processes, minimizing waste and
+              maximizing resource efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="reveal">Partner With Us Today</h2>
+    <p class="reveal stagger-1">Join hundreds of satisfied clients who trust Stravous Construction with their most
+      important building projects.</p>
+    <div class="cta-btns reveal stagger-2">
+      <a href="contact.html" class="btn-solid-h" style="padding:16px 36px;font-size:16px;border-radius:14px">Get in
+        Touch</a>
+      <a href="projects.html" class="btn-outline-h"
+        style="padding:16px 36px;font-size:16px;border-radius:14px;color:rgba(255,255,255,.8)">View Our Work</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Stravous <span>Construction</span></a>
+          <p>Nigeria's trusted construction partner. Building premium residential and commercial projects with quality,
+            integrity, and professional excellence since 2013.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5><a href="projects.html">Residential</a><a href="projects.html">Commercial</a><a
+            href="projects.html">Land Development</a><a href="projects.html">Renovations</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5><a href="about.html">About Us</a><a href="projects.html">Projects</a><a
+            href="contact.html">Contact</a><a href="#">Careers</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5><a href="mailto:info@stravousconstruction.com">info@stravousconstruction.com</a><a
+            href="tel:+2348000000000">+234 800 000 0000</a><a href="#">Abuja, Nigeria</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Stravous Construction. All rights reserved.</p>
+        <p>Built with Excellence in Nigeria</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 60) }, { passive: true });
+    header.classList.toggle('scrolled', window.scrollY > 60);
+
+    const revealEls = document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => { document.getElementById('mainNav').classList.remove('open'); document.getElementById('navOverlay').classList.remove('show') });
+    });
+  </script>
+</body>
+
+</html>

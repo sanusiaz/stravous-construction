@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stravous Construction — Building Excellence Across Nigeria</title>
+  <meta name="description"
+    content="Stravous Construction delivers premium residential and commercial building projects with uncompromising quality, safety, and professional expertise across Nigeria.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Stravous <span>Construction</span></a>
+      <nav>
+        <ul class="nav-links" id="mainNav">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <button class="mobile-toggle"
+          onclick="document.getElementById('mainNav').classList.toggle('open');document.getElementById('navOverlay').classList.toggle('show')"><span
+            class="iconify" data-icon="mdi:menu" data-width="24"></span></button>
+        <a href="contact.html" class="btn-outline-h">Get a Quote</a>
+        <a href="projects.html" class="btn-solid-h">Our Projects</a>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav-overlay" id="navOverlay"
+    onclick="document.getElementById('mainNav').classList.remove('open');this.classList.remove('show')"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-video-bg">
+      <video autoplay muted loop playsinline>
+        <source src="assets/videos/DJI_0399.MP4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Nigeria's Trusted Construction Partner</div>
+      <h1>Building <span>Excellence</span><br>From Ground Up</h1>
+      <p>We deliver premium residential and commercial construction projects with uncompromising quality, safety
+        standards, and professional expertise across Nigeria.</p>
+      <div class="hero-cta">
+        <a href="projects.html" class="btn-solid-h" style="padding:16px 36px;font-size:16px;border-radius:14px">View Our
+          Projects</a>
+        <a href="contact.html" class="btn-outline-h"
+          style="padding:16px 36px;font-size:16px;border-radius:14px;color:rgba(255,255,255,.8)">Request
+          Consultation</a>
+      </div>
+      <!-- <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num" data-count="150">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-count="12">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-count="85">0</div>
+          <div class="stat-label">Expert Engineers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-count="36">0</div>
+          <div class="stat-label">States Covered</div>
+        </div>
+      </div> -->
+    </div>
+    <div class="hero-scroll"><span></span></div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section-light" id="services">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="gold-label">Our Services</div>
+        <h2>What We Build</h2>
+        <p>From concept to completion, we deliver full-spectrum construction services tailored to exceed expectations.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal stagger-1">
+          <div class="service-card-img"><img src="assets/images/IMG_0704.JPG" alt="Residential Construction"
+              loading="lazy"></div>
+          <div class="service-card-body">
+            <div class="service-icon"><span class="iconify" data-icon="mdi:home-city" data-width="24"></span></div>
+            <h4>Residential Construction</h4>
+            <p>Luxury homes, duplexes, and estates built with premium materials and world-class craftsmanship for modern
+              Nigerian families.</p>
+          </div>
+        </div>
+        <div class="service-card reveal stagger-2">
+          <div class="service-card-img"><img src="assets/images/IMG_0784.JPG" alt="Commercial Projects" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <div class="service-icon"><span class="iconify" data-icon="mdi:office-building" data-width="24"></span>
+            </div>
+            <h4>Commercial Projects</h4>
+            <p>Office complexes, retail spaces, and mixed-use developments designed for functionality and aesthetic
+              appeal.</p>
+          </div>
+        </div>
+        <div class="service-card reveal stagger-3">
+          <div class="service-card-img"><img src="assets/images/IMG_0668.JPG" alt="Land Development" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <div class="service-icon"><span class="iconify" data-icon="mdi:earth" data-width="24"></span></div>
+            <h4>Land Development</h4>
+            <p>Site preparation, grading, and infrastructure development to transform raw land into prime real estate
+              opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="section section-soft" id="aboutPreview">
+    <div class="section-inner">
+      <div class="about-split">
+        <div class="about-images reveal-left">
+          <div class="about-img-main"><img src="assets/images/IMG_0770.JPG" alt="Stravous Construction Team"
+              loading="lazy"></div>
+          <div class="about-img-float"><img src="assets/images/IMG_0740.JPG" alt="On-site Supervision" loading="lazy">
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <div class="gold-label">Who We Are</div>
+          <h2>A Legacy of Quality Construction</h2>
+          <p>Stravous Construction is a leading Nigerian construction firm committed to delivering exceptional building
+            projects. Our team of seasoned engineers and project managers ensures every structure we build stands as a
+            testament to quality and innovation.</p>
+          <p>With over a decade of experience, we have earned the trust of clients across Nigeria by consistently
+            delivering projects on time, within budget, and to the highest standards.</p>
+          <div class="about-features">
+            <div class="about-feat">
+              <div class="about-feat-icon"><span class="iconify" data-icon="mdi:certificate" data-width="20"></span>
+              </div>
+              <div>
+                <h5>Licensed & Insured</h5>
+                <p>Fully certified professionals</p>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="about-feat-icon"><span class="iconify" data-icon="mdi:clock-check-outline"
+                  data-width="20"></span></div>
+              <div>
+                <h5>On-Time Delivery</h5>
+                <p>Reliable project timelines</p>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="about-feat-icon"><span class="iconify" data-icon="mdi:shield-check" data-width="20"></span>
+              </div>
+              <div>
+                <h5>Safety First</h5>
+                <p>Strict safety compliance</p>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="about-feat-icon"><span class="iconify" data-icon="mdi:diamond-stone" data-width="20"></span>
+              </div>
+              <div>
+                <h5>Premium Quality</h5>
+                <p>Best-in-class materials</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE STRIP -->
+  <div class="image-strip reveal">
+    <img src="assets/images/IMG_0667.JPG" alt="Construction Site 1" loading="lazy">
+    <img src="assets/images/IMG_0700.JPG" alt="Construction Site 2" loading="lazy">
+    <img src="assets/images/IMG_0710.JPG" alt="Construction Site 3" loading="lazy">
+    <img src="assets/images/IMG_0750.JPG" alt="Construction Site 4" loading="lazy">
+    <img src="assets/images/IMG_0789.JPG" alt="Construction Site 5" loading="lazy">
+  </div>
+
+  <!-- PROCESS -->
+  <section class="section section-light" id="process">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="gold-label">How We Work</div>
+        <h2>Our Construction Process</h2>
+        <p>A transparent, systematic approach that keeps you informed and in control at every stage.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal stagger-1">
+          <div class="process-num">01</div>
+          <h4>Consultation</h4>
+          <p>We meet to understand your vision, assess site conditions, and define project scope and budget.</p>
+        </div>
+        <div class="process-step reveal stagger-2">
+          <div class="process-num">02</div>
+          <h4>Design & Planning</h4>
+          <p>Our architects create detailed blueprints while our engineers develop comprehensive project plans.</p>
+        </div>
+        <div class="process-step reveal stagger-3">
+          <div class="process-num">03</div>
+          <h4>Construction</h4>
+          <p>Expert craftsmen execute the build with regular progress updates and strict quality control measures.</p>
+        </div>
+        <div class="process-step reveal stagger-4">
+          <div class="process-num">04</div>
+          <h4>Handover</h4>
+          <p>Final inspections, quality assurance, and seamless handover with full project documentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SHOWCASE -->
+  <section class="section section-dark" id="videoShowcase">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="gold-label">See Us In Action</div>
+        <h2 style="color:#fff">Aerial Project Overview</h2>
+        <p>Experience the scale and precision of our construction projects from above.</p>
+      </div>
+      <div class="video-showcase reveal-scale">
+        <video controls preload="metadata">
+          <source src="assets/videos/DJI_0416.MP4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT GALLERY PREVIEW -->
+  <section class="section section-soft" id="galleryPreview">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="gold-label">Our Portfolio</div>
+        <h2>Recent Project Highlights</h2>
+        <p>A glimpse into the quality and scale of our construction work across Nigeria.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall reveal stagger-1"><img src="assets/images/IMG_0790.JPG" alt="Project 1"
+            loading="lazy">
+          <div class="gallery-item-overlay"><span>Residential Estate</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-2"><img src="assets/images/IMG_0712.JPG" alt="Project 2" loading="lazy">
+          <div class="gallery-item-overlay"><span>Site Survey</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-3"><img src="assets/images/IMG_0722.JPG" alt="Project 3" loading="lazy">
+          <div class="gallery-item-overlay"><span>Foundation Work</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-4"><img src="assets/images/IMG_0733.JPG" alt="Project 4" loading="lazy">
+          <div class="gallery-item-overlay"><span>Structural Phase</span></div>
+        </div>
+        <div class="gallery-item wide reveal stagger-5"><img src="assets/images/IMG_0759.JPG" alt="Project 5"
+            loading="lazy">
+          <div class="gallery-item-overlay"><span>Commercial Build</span></div>
+        </div>
+        <div class="gallery-item reveal stagger-6"><img src="assets/images/IMG_0795.JPG" alt="Project 6" loading="lazy">
+          <div class="gallery-item-overlay"><span>Luxury Villa</span></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:44px"><a href="projects.html" class="btn-outline-h"
+          style="padding:14px 36px;font-size:15px;border-radius:12px">View All Projects →</a></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section-dark">
+    <div class="stats-bar reveal">
+      <div class="stat-item">
+        <div class="stat-num" data-count="150">0</div>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-count="500">0</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-count="85">0</div>
+        <div class="stat-label">Expert Engineers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-count="12">0</div>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="reveal">Ready to Build Your Dream?</h2>
+    <p class="reveal stagger-1">Partner with Stravous Construction and experience premium quality, on-time delivery, and
+      professional expertise on every project.</p>
+    <div class="cta-btns reveal stagger-2">
+      <a href="contact.html" class="btn-solid-h" style="padding:16px 36px;font-size:16px;border-radius:14px">Start Your
+        Project</a>
+      <a href="about.html" class="btn-outline-h"
+        style="padding:16px 36px;font-size:16px;border-radius:14px;color:rgba(255,255,255,.8)">Learn More About Us</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Stravous <span>Construction</span></a>
+          <p>Nigeria's trusted construction partner. Building premium residential and commercial projects with quality,
+            integrity, and professional excellence since 2013.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5><a href="projects.html">Residential</a><a href="projects.html">Commercial</a><a
+            href="projects.html">Land Development</a><a href="projects.html">Renovations</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5><a href="about.html">About Us</a><a href="projects.html">Projects</a><a
+            href="contact.html">Contact</a><a href="#">Careers</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5><a href="mailto:info@stravousconstruction.com">info@stravousconstruction.com</a><a
+            href="tel:+2348000000000">+234 800 000 0000</a><a href="#">Abuja, Nigeria</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Stravous Construction. All rights reserved.</p>
+        <p>Built with Excellence in Nigeria</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header transparent → solid on scroll
+    const header = document.getElementById('siteHeader');
+    let lastScroll = 0;
+    function updateHeader() {
+      const y = window.scrollY;
+      header.classList.toggle('scrolled', y > 60);
+      lastScroll = y;
+    }
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader();
+
+    // Scroll reveal with stagger support
+    const revealEls = document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // Counter animation
+    let countersAnimated = false;
+    function animateCounters() {
+      if (countersAnimated) return;
+      countersAnimated = true;
+      document.querySelectorAll('[data-count]').forEach(el => {
+        const target = parseInt(el.dataset.count);
+        const suffix = el.dataset.suffix || '+';
+        const duration = 1800;
+        const start = performance.now();
+        function tick(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(target * eased) + suffix;
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
+    }
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { animateCounters(); statsObserver.disconnect() } })
+    }, { threshold: 0.3 });
+    const heroStats = document.querySelector('.hero-stats');
+    if (heroStats) statsObserver.observe(heroStats);
+
+    // Mobile nav
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.getElementById('mainNav').classList.remove('open');
+        document.getElementById('navOverlay').classList.remove('show');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
