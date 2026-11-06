@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact us | Stravous Construction</title>
+<meta name="description" content="Request a quote or consultation from Stravous Construction, Wuye District, Abuja. We reply within 24 hours.">
+<meta property="og:title" content="Contact us | Stravous Construction">
+<meta property="og:description" content="Request a quote or consultation from Stravous Construction, Wuye District, Abuja. We reply within 24 hours.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0E1B2E">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/stravous.css">
+<script>(function(d){d.classList.add('js');try{if(sessionStorage.getItem('stravous-intro')||matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('no-intro');}catch(e){}})(document.documentElement);</script>
+</head>
+<body>
+<div class="intro-curtain" aria-hidden="true"><div class="intro-curtain__inner"><div class="intro-curtain__word"><span style="animation-delay:0ms">S</span><span style="animation-delay:70ms">T</span><span style="animation-delay:140ms">R</span><span style="animation-delay:210ms">A</span><span style="animation-delay:280ms">V</span><span style="animation-delay:350ms">O</span><span style="animation-delay:420ms">U</span><span style="animation-delay:490ms">S</span></div><div class="intro-curtain__rule"></div><div class="intro-curtain__sub">CONSTRUCTION</div></div></div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html" aria-label="Stravous Construction, home"><b>STRAVOUS</b><span>CONSTRUCTION</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <a class="btn btn--light" href="contact.html">Get a quote</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head" aria-labelledby="page-title">
+  <div class="page-head__media"><img src="https://stravous-construction.netlify.app/assets/images/IMG_0668.JPG" alt="A Stravous construction site"></div>
+  <div class="wrap">
+    <div class="datum" aria-hidden="true"><span class="datum__mark"><svg viewBox="0 0 22 14" aria-hidden="true"><path d="M1 1h20L11 13z" fill="none" stroke="#B8975A" stroke-width="1.4"/><path d="M11 1v12" stroke="#B8975A" stroke-width="1"/></svg><small>&plusmn;0.00</small></span><span class="datum__line"></span><span class="datum__place">Wuye, Abuja</span></div>
+    <h1 id="page-title">Let’s talk about your project.</h1>
+    <p>Request a quote or a consultation. Our team replies within 24 hours.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="form-title">
+  <div class="wrap contact">
+    <div>
+      <h2 id="form-title">Send us a message</h2>
+      <p class="contact__lead">Share a few details about what you want to build. Fields marked required must be filled in.</p>
+
+      <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="company" data-contact novalidate>
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden-field"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+
+        <div class="field">
+          <label for="first-name">First name (required)</label>
+          <input id="first-name" name="first-name" type="text" autocomplete="given-name" required aria-describedby="first-name-err">
+          <span class="err" id="first-name-err">Enter your first name.</span>
+        </div>
+        <div class="field">
+          <label for="last-name">Last name (required)</label>
+          <input id="last-name" name="last-name" type="text" autocomplete="family-name" required aria-describedby="last-name-err">
+          <span class="err" id="last-name-err">Enter your last name.</span>
+        </div>
+        <div class="field">
+          <label for="email">Email address (required)</label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err">
+          <span class="err" id="email-err">Enter an email address like name@example.com.</span>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+234">
+        </div>
+        <div class="field full">
+          <label for="project-type">Project type (required)</label>
+          <select id="project-type" name="project-type" required aria-describedby="project-type-err">
+            <option value="">Choose a project type</option>
+            <option>Residential construction</option>
+            <option>Commercial construction</option>
+            <option>Land development</option>
+            <option>Renovation and remodelling</option>
+            <option>Project consultation</option>
+            <option>Other</option>
+          </select>
+          <span class="err" id="project-type-err">Choose a project type.</span>
+        </div>
+        <div class="field full">
+          <label for="details">Project details (required)</label>
+          <textarea id="details" name="details" required aria-describedby="details-err" placeholder="Location, size, timeline and anything else we should know."></textarea>
+          <span class="err" id="details-err">Tell us a little about your project.</span>
+        </div>
+        <div class="full form__foot">
+          <button class="btn btn--solid" type="submit">Send message</button>
+          <span class="form__note">We reply within 24 hours.</span>
+        </div>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <aside class="details" aria-label="Contact details">
+      <section>
+        <h3>Head office</h3>
+        <p>Stravous Construction HQ<br>Plot 42, Cadastral Zone<br>Wuye District, Abuja<br>FCT, Nigeria</p>
+      </section>
+      <section>
+        <h3>Phone and email</h3>
+        <dl>
+          <div><dt>Main line</dt><dd><a href="tel:+2348000000000">+234 800 000 0000</a></dd></div>
+          <div><dt>Projects</dt><dd><a href="tel:+2348000000001">+234 800 000 0001</a></dd></div>
+          <div><dt>General enquiries</dt><dd><a href="mailto:info@stravousconstruction.com">info@stravousconstruction.com</a></dd></div>
+          <div><dt>Projects team</dt><dd><a href="mailto:projects@stravousconstruction.com">projects@stravousconstruction.com</a></dd></div>
+          <div><dt>Careers</dt><dd><a href="mailto:careers@stravousconstruction.com">careers@stravousconstruction.com</a></dd></div>
+        </dl>
+      </section>
+      <section>
+        <h3>Working hours</h3>
+        <ul>
+          <li><span>Monday to Friday</span><span>8:00 am – 6:00 pm</span></li>
+          <li><span>Saturday</span><span>9:00 am – 2:00 pm</span></li>
+          <li><span>Sunday and public holidays</span><span>Closed</span></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <div class="wrap">
+    <div class="strip strip--4" data-gallery="contact">
+      <button type="button" data-full="https://stravous-construction.netlify.app/assets/images/IMG_0770.JPG"><img src="https://stravous-construction.netlify.app/assets/images/IMG_0770.JPG" alt="Stravous project lead on site" loading="lazy"></button>
+      <button type="button" data-full="https://stravous-construction.netlify.app/assets/images/IMG_0740.JPG"><img src="https://stravous-construction.netlify.app/assets/images/IMG_0740.JPG" alt="Stravous site supervisor" loading="lazy"></button>
+      <button type="button" data-full="https://stravous-construction.netlify.app/assets/images/IMG_0710.JPG"><img src="https://stravous-construction.netlify.app/assets/images/IMG_0710.JPG" alt="Stravous construction site" loading="lazy"></button>
+      <button type="button" data-full="https://stravous-construction.netlify.app/assets/images/IMG_0784.JPG"><img src="https://stravous-construction.netlify.app/assets/images/IMG_0784.JPG" alt="Stravous construction site" loading="lazy"></button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="map">
+      <iframe title="Map showing Wuye District, Abuja" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Wuye+District,+Abuja,+Nigeria&z=14&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-mark" aria-hidden="true"><span style="--i:0">S</span><span style="--i:1">T</span><span style="--i:2">R</span><span style="--i:3">A</span><span style="--i:4">V</span><span style="--i:5">O</span><span style="--i:6">U</span><span style="--i:7">S</span></div>
+    <div class="footer-top">
+      <div>
+        <a class="wordmark" href="index.html" aria-label="Stravous Construction, home"><b>STRAVOUS</b><span>CONSTRUCTION</span></a>
+        <p class="footer-about">Premium residential and commercial construction across Nigeria, since 2013.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mailto:careers@stravousconstruction.com">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Residential construction</a></li>
+          <li><a href="index.html#services">Commercial projects</a></li>
+          <li><a href="index.html#services">Land development</a></li>
+          <li><a href="contact.html">Renovation and remodelling</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Head office</h4>
+        <address>
+          Plot 42, Cadastral Zone<br>Wuye District, Abuja<br>FCT, Nigeria<br><br>
+          <a href="tel:+2348000000000">+234 800 000 0000</a><br>
+          <a href="mailto:info@stravousconstruction.com">info@stravousconstruction.com</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Stravous Construction. All rights reserved.</span>
+      <div class="datum" aria-hidden="true"><span class="datum__mark"><svg viewBox="0 0 22 14" aria-hidden="true"><path d="M1 1h20L11 13z" fill="none" stroke="#B8975A" stroke-width="1.4"/><path d="M11 1v12" stroke="#B8975A" stroke-width="1"/></svg><small>&plusmn;0.00</small></span><span class="datum__line"></span><span class="datum__place">Built in Nigeria</span></div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/lenis.min.js"></script>
+<script src="assets/js/stravous.js"></script>
+</body>
+</html>
