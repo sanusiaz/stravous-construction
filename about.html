@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-NG">
+<html lang="en-NG" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,18 +8,25 @@
 <meta property="og:title" content="About us | Stravous Construction">
 <meta property="og:description" content="Our story, mission, team and values. Stravous Construction has built across Nigeria since 2013.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0E1B2E">
-<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0C0E11">
+<link rel="icon" href="assets/brand/favicon.ico" sizes="48x48">
+<link rel="icon" href="assets/brand/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="assets/brand/site.webmanifest">
+<meta property="og:image" content="assets/brand/logo.png">
 <link rel="preload" href="assets/fonts/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/brand/logo-440.webp" as="image">
 <link rel="stylesheet" href="assets/css/stravous.css">
+<script>(function(d){try{var t=localStorage.getItem('stravous-theme')||'dark';d.setAttribute('data-theme',t);}catch(e){}})(document.documentElement);</script>
 <script>(function(d){d.classList.add('js');try{if(sessionStorage.getItem('stravous-intro')||matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('no-intro');}catch(e){}})(document.documentElement);</script>
 </head>
 <body>
-<div class="intro-curtain" aria-hidden="true"><div class="intro-curtain__inner"><div class="intro-curtain__word"><span style="animation-delay:0ms">S</span><span style="animation-delay:70ms">T</span><span style="animation-delay:140ms">R</span><span style="animation-delay:210ms">A</span><span style="animation-delay:280ms">V</span><span style="animation-delay:350ms">O</span><span style="animation-delay:420ms">U</span><span style="animation-delay:490ms">S</span></div><div class="intro-curtain__rule"></div><div class="intro-curtain__sub">CONSTRUCTION</div></div></div>
+<div class="intro-curtain" aria-hidden="true"><div class="intro-curtain__inner"><div class="intro-curtain__logo"><img src="assets/brand/logo-440.webp" alt="" width="440" height="224"></div><div class="intro-curtain__rule"></div></div></div>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="wordmark" href="index.html" aria-label="Stravous Construction, home"><b>STRAVOUS</b><span>CONSTRUCTION</span></a>
+    <a class="logo" href="index.html" aria-label="Stravous, home"><img src="assets/brand/logo-440.webp" alt="Stravous Limited" width="440" height="224"></a>
+    <button class="theme-toggle header-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
     <nav class="nav" id="site-nav" aria-label="Main">
       <ul>
@@ -28,7 +35,10 @@
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <a class="btn btn--light" href="contact.html">Get a quote</a>
+      <div class="nav__tools">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+        <a class="btn btn--light" href="contact.html">Get a quote</a>
+      </div>
     </nav>
   </div>
 </header>
@@ -37,7 +47,7 @@
 <section class="page-head" aria-labelledby="page-title">
   <div class="page-head__media"><img src="assets/img/img-0670-1280.webp" srcset="assets/img/img-0670-640.webp 640w, assets/img/img-0670-1280.webp 1280w, assets/img/img-0670-1920.webp 1920w" sizes="100vw" width="1920" height="1440" decoding="async" alt="The Stravous team on site" fetchpriority="high"></div>
   <div class="wrap">
-    <div class="datum" aria-hidden="true"><span class="datum__mark"><svg viewBox="0 0 22 14" aria-hidden="true"><path d="M1 1h20L11 13z" fill="none" stroke="#B8975A" stroke-width="1.4"/><path d="M11 1v12" stroke="#B8975A" stroke-width="1"/></svg><small>&plusmn;0.00</small></span><span class="datum__line"></span><span class="datum__place">Since 2013</span></div>
+    <div class="datum" aria-hidden="true"><span class="datum__mark"><svg viewBox="0 0 22 14" aria-hidden="true"><path d="M1 1h20L11 13z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M11 1v12" stroke="currentColor" stroke-width="1"/></svg><small>&plusmn;0.00</small></span><span class="datum__line"></span><span class="datum__place">Since 2013</span></div>
     <h1 id="page-title">About Stravous Construction</h1>
     <p>Building Nigeria’s future, one project at a time.</p>
   </div>
@@ -135,7 +145,7 @@
 
 <section class="cta" aria-labelledby="cta-title">
   <div class="wrap">
-    <div class="datum" aria-hidden="true"><span class="datum__mark"><svg viewBox="0 0 22 14" aria-hidden="true"><path d="M1 1h20L11 13z" fill="none" stroke="#B8975A" stroke-width="1.4"/><path d="M11 1v12" stroke="#B8975A" stroke-width="1"/></svg><small>&plusmn;0.00</small></span><span class="datum__line"></span></div>
+    <div class="datum" aria-hidden="true"><span class="datum__mark"><svg viewBox="0 0 22 14" aria-hidden="true"><path d="M1 1h20L11 13z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M11 1v12" stroke="currentColor" stroke-width="1"/></svg><small>&plusmn;0.00</small></span><span class="datum__line"></span></div>
     <h2 id="cta-title">Partner with us today.</h2>
     <div>
       <p>Join the clients who have trusted Stravous with their homes, offices and land.</p>
@@ -153,7 +163,7 @@
     <div class="footer-mark" aria-hidden="true"><span style="--i:0">S</span><span style="--i:1">T</span><span style="--i:2">R</span><span style="--i:3">A</span><span style="--i:4">V</span><span style="--i:5">O</span><span style="--i:6">U</span><span style="--i:7">S</span></div>
     <div class="footer-top">
       <div>
-        <a class="wordmark" href="index.html" aria-label="Stravous Construction, home"><b>STRAVOUS</b><span>CONSTRUCTION</span></a>
+        <a class="logo" href="index.html" aria-label="Stravous, home"><img src="assets/brand/logo-440.webp" alt="Stravous Limited" width="440" height="224"></a>
         <p class="footer-about">Premium residential and commercial construction across Nigeria, since 2013.</p>
       </div>
       <div>
@@ -185,7 +195,7 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; <span data-year>2026</span> Stravous Construction. All rights reserved.</span>
-      <div class="datum" aria-hidden="true"><span class="datum__mark"><svg viewBox="0 0 22 14" aria-hidden="true"><path d="M1 1h20L11 13z" fill="none" stroke="#B8975A" stroke-width="1.4"/><path d="M11 1v12" stroke="#B8975A" stroke-width="1"/></svg><small>&plusmn;0.00</small></span><span class="datum__line"></span><span class="datum__place">Built in Nigeria</span></div>
+      <div class="datum" aria-hidden="true"><span class="datum__mark"><svg viewBox="0 0 22 14" aria-hidden="true"><path d="M1 1h20L11 13z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M11 1v12" stroke="currentColor" stroke-width="1"/></svg><small>&plusmn;0.00</small></span><span class="datum__line"></span><span class="datum__place">Built in Nigeria</span></div>
     </div>
   </div>
 </footer>

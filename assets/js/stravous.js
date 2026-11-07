@@ -2,6 +2,28 @@
   var doc = document.documentElement;
   var body = document.body;
 
+  // Light / dark theme
+  var toggles = document.querySelectorAll('[data-theme-toggle]');
+  function currentTheme() { return doc.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'; }
+  function syncToggles() {
+    var dark = currentTheme() === 'dark';
+    toggles.forEach(function (t) {
+      t.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      t.setAttribute('aria-pressed', dark ? 'true' : 'false');
+    });
+  }
+  function setTheme(theme, remember) {
+    doc.classList.add('theme-fade');
+    doc.setAttribute('data-theme', theme);
+    if (remember) { try { localStorage.setItem('stravous-theme', theme); } catch (e) {} }
+    syncToggles();
+    setTimeout(function () { doc.classList.remove('theme-fade'); }, 500);
+  }
+  toggles.forEach(function (t) {
+    t.addEventListener('click', function () { setTheme(currentTheme() === 'dark' ? 'light' : 'dark', true); });
+  });
+  syncToggles();
+
   // Header: solid background once the page scrolls past the top
   var header = document.querySelector('.site-header');
   function onScroll() {

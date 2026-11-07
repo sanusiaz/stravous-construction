@@ -15,8 +15,11 @@ Upload this whole folder (pages plus `assets`) to Netlify. Everything the site n
 - `assets/css/stravous.css`: all styles
 - `assets/js/stravous.js`: header, mobile menu, film play/pause, photo viewer, contact form
 - `assets/fonts/`: Archivo and Source Serif 4, self-hosted variable fonts (SIL Open Font License)
-- `assets/images/favicon.svg`
+- `assets/brand/`: logo (`logo-440.webp` for the site, `logo.png` full size with a transparent background), favicons, app icons and `site.webmanifest`
 - `assets/img/`, `assets/video/`: compressed photos and videos
+
+## Light and dark mode
+The moon/sun button in the header switches themes. The site opens in dark mode and remembers each visitor's choice. The header is always dark so the white chrome logo shows in both themes. All colours live as variables at the top of `assets/css/stravous.css` (`:root` for light, `[data-theme="dark"]` for dark).
 
 ## Contact form
 The form uses Netlify Forms (`data-netlify="true"`, honeypot spam field). After the first deploy, submissions show up under Site > Forms in Netlify. Turn on email notifications there.
