@@ -22,6 +22,15 @@
   toggles.forEach(function (t) {
     t.addEventListener('click', function () { setTheme(currentTheme() === 'dark' ? 'light' : 'dark', true); });
   });
+  // Follow the system setting while the visitor has not picked a theme
+  if (window.matchMedia) {
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+    var follow = function (e) {
+      var stored = null; try { stored = localStorage.getItem('stravous-theme'); } catch (err) {}
+      if (!stored) setTheme(e.matches ? 'dark' : 'light', false);
+    };
+    if (mq.addEventListener) mq.addEventListener('change', follow); else if (mq.addListener) mq.addListener(follow);
+  }
   syncToggles();
 
   // Header: solid background once the page scrolls past the top
