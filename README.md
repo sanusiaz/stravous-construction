@@ -3,13 +3,12 @@
 Static HTML/CSS/JS. No build step and no framework.
 
 ## Deploy
-1. Copy these files into the root of the existing Netlify project, next to the current `assets/images` and `assets/videos` folders. The pages use those same photos and drone videos (IMG_0667 to IMG_0795, DJI_0399 to DJI_0430).
-2. Replace the old `index.html`, `about.html`, `projects.html` and `contact.html`.
-3. Deploy. Netlify serves `/about`, `/projects` and `/contact` as before.
+Upload this whole folder (pages plus `assets`) to Netlify. Everything the site needs is inside it. The only outside files are the three credited Abuja city photos on the home page, which load from Unsplash.
 
-## Image links
-Photos and videos load from https://stravous-construction.netlify.app/assets/, so the pages also work when opened locally. If the site moves to its own domain, find and replace that address with nothing to make the paths relative again.
-The three Abuja city photos on the home page are hotlinked from Unsplash (credited on the image). If one fails to load, its box falls back to plain green.
+## Speed
+- Photos: `assets/img/img-XXXX-{640,1280,1920}.webp`. Each page lets the browser pick the smallest size that looks sharp on the visitor's screen. 175 MB of original JPGs became about 31 MB in total, and a phone visitor downloads roughly 60 KB per photo.
+- Videos: `assets/video/dji-XXXX-{720,1080}.mp4` plus a `-poster.webp` frame each, with no audio and set to start playing before they finish downloading. Phones get the 720p version. Only the hero video loads with the page; the others load when a visitor scrolls near them, and pause when off screen.
+- Fonts and scripts are local. The original JPG/MP4 files are not used by the site any more.
 
 ## What's included
 - `index.html`, `about.html`, `projects.html`, `contact.html`
@@ -17,6 +16,7 @@ The three Abuja city photos on the home page are hotlinked from Unsplash (credit
 - `assets/js/stravous.js`: header, mobile menu, film play/pause, photo viewer, contact form
 - `assets/fonts/`: Archivo and Source Serif 4, self-hosted variable fonts (SIL Open Font License)
 - `assets/images/favicon.svg`
+- `assets/img/`, `assets/video/`: compressed photos and videos
 
 ## Contact form
 The form uses Netlify Forms (`data-netlify="true"`, honeypot spam field). After the first deploy, submissions show up under Site > Forms in Netlify. Turn on email notifications there.

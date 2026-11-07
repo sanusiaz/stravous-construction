@@ -53,6 +53,33 @@
     document.querySelectorAll('video[autoplay]').forEach(function (v) { v.pause(); v.removeAttribute('autoplay'); });
   }
 
+  // Lazy videos: load the right size only when near the screen
+  var lazyVideos = document.querySelectorAll('video[data-src]');
+  function loadVideo(v) {
+    if (v.dataset.loaded) return;
+    v.dataset.loaded = '1';
+    v.src = v.dataset.src + (window.innerWidth <= 900 ? '-720.mp4' : '-1080.mp4');
+    v.load();
+  }
+  if ('IntersectionObserver' in window) {
+    var vio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var v = e.target;
+        if (e.isIntersecting) {
+          loadVideo(v);
+          if (v.hasAttribute('autoplay') && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            var p = v.play(); if (p && p.catch) p.catch(function () {});
+          }
+        } else if (v.hasAttribute('autoplay') && !v.paused) {
+          v.pause();
+        }
+      });
+    }, { rootMargin: '300px 0px' });
+    lazyVideos.forEach(function (v) { vio.observe(v); });
+  } else {
+    lazyVideos.forEach(loadVideo);
+  }
+
   // Play / pause buttons for background films
   document.querySelectorAll('[data-film-toggle]').forEach(function (btn) {
     var video = document.getElementById(btn.getAttribute('data-film-toggle'));

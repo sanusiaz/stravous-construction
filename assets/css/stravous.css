@@ -750,3 +750,7 @@ html.lenis { scroll-behavior: auto; }
   .marquee__track { transform: none !important; }
   .hero__scroll::after { animation: none; }
 }
+
+/* Projects: three films, the first one wide */
+.films video:first-child:nth-last-child(3) { grid-column: 1 / -1; aspect-ratio: 21 / 9; }
+img { background-color: var(--line); }
